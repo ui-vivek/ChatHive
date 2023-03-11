@@ -20,7 +20,7 @@
         align-items: center;
         background-color: #183a1d;
         height: 3.5em;
-        padding: 1em;
+        padding: 1rem;
         justify-content: space-between;
         color: white;
 
@@ -60,8 +60,8 @@
             color: #183a1d;
             width: 100%;
 
-            &::placeholder{
-                color: #fefbe9bb;
+            &::placeholder {
+              color: #fefbe9bb;
             }
           }
           *:focus {
@@ -69,28 +69,41 @@
             border-bottom: 2px solid #183a1d;
           }
         }
-        .userchat {
-            padding: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            color: #FEFBE9;
-            cursor: pointer;
-          img {
-            border-radius: 50%;
-            height: 4rem;
-            width: 4rem;
-            object-fit: cover;
+      }
+      .userchat {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #fefbe9;
+        cursor: pointer;
+        img {
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+        }
+        &:hover {
+          background-color: #f0a04b57;
+        }
+        .userchatinfo {
+          span {
+            font-size: 18px;
+            font-weight: 500;
           }
-
-          &:hover{
-            background-color: #f0a04b57;
+          p {
+            margin: 0px;
+            font-size: 14px;
+            color: lightgray;
           }
         }
       }
     }
     .chat {
       flex: 2;
+      .chatInfo{
+        
+      }
     }
   }
 }
