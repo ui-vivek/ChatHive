@@ -1,10 +1,15 @@
 import React from 'react'
-import Register from './Register'
+import Sidebar from '../components/Sidebar'
+import Chat from '../components/Chat'
+import './style/home.scss'
 
 export default function Home() {
   return (
-    <>
-    <Register/>
-    </>
+    <div className='home'>
+      <div className='contnair'>
+         <Sidebar/>
+         <Chat/>
+      </div>
+    </div>
   )
 }
