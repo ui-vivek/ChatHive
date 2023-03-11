@@ -1,4 +1,6 @@
 import React from 'react'
+import Messages from './Messages'
+import Input from './Input'
 
 export default function Chat() {
   return (
@@ -11,6 +13,8 @@ export default function Chat() {
           <span><i class='bx bx-dots-horizontal-rounded bx-sm' style={{color:'#e1eedd'}}  ></i></span>
         </div>
       </div>
+        <Messages/>
+        <Input/>
     </div>
   )
 }

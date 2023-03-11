@@ -14,7 +14,7 @@
     .sidebar {
       flex: 1;
       border-right: 2px solid white;
-      background-color: #7db9b6;
+      background-color: #698269;
       .navbar {
         display: flex;
         align-items: center;
@@ -102,7 +102,30 @@
     .chat {
       flex: 2;
       .chatInfo{
-        
+        height: 3.5rem;
+        padding: 1rem;
+        background-color: #F0A04B;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .chatIcon{
+        padding-right: 0.2rem;
+        span{
+            margin: 0px 6px;
+            cursor: pointer;
+        }
+      }
+
+      .messages{
+        background-color: #FEFBE9;
+        height: calc(100% - 7rem);
+        padding: 10px;
+      }
+
+      .input{
+        background-color: #E1EEDD;
+        height: 3.5rem;
       }
     }
   }
