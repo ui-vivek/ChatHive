@@ -1,3 +1,18 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
 .home {
   height: 100vh;
   display: flex;
@@ -11,10 +26,17 @@
     border-radius: 10px;
     display: flex;
     overflow: hidden;
+    @include tab(){
+      width: 90%;
+    }
+    @include mobile(){
+      height: 70%;
+    }
     .sidebar {
       flex: 1;
       border-right: 2px solid white;
       background-color: #698269;
+      // position: relative;
       .navbar {
         display: flex;
         align-items: center;
@@ -23,7 +45,11 @@
         padding: 1rem;
         justify-content: space-between;
         color: white;
-
+        .logo{
+          @include tab(){
+            display: none;
+          }
+        }
         .user {
           display: flex;
           gap: 0.5rem;
@@ -39,9 +65,17 @@
             background-color: #f5e9cf;
             color: #e96479;
             border: none;
-            border-radius: 2px;
+            border-radius: 0.2rem;
+            display: flex;
+            align-items: center;
             font-size: 13px;
             font-weight: bold;
+            object-fit: cover;
+            @include tab(){
+              span{
+                display: none;
+              }
+            }
             &:hover {
               background-color: #e96479;
               color: #f5e9cf;
