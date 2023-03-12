@@ -101,31 +101,59 @@
     }
     .chat {
       flex: 2;
-      .chatInfo{
+      .chatInfo {
         height: 3.5rem;
         padding: 1rem;
-        background-color: #F0A04B;
+        background-color: #f0a04b;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .chatIcon{
+      .chatIcon {
         padding-right: 0.2rem;
-        span{
-            margin: 0px 6px;
-            cursor: pointer;
+        span {
+          margin: 0px 6px;
+          cursor: pointer;
         }
       }
 
-      .messages{
-        background-color: #FEFBE9;
+      .messages {
+        background-color: #fefbe9;
         height: calc(100% - 7rem);
         padding: 10px;
       }
 
-      .input{
-        background-color: #E1EEDD;
+      .input {
+        // background-color: #e1eedd;
+        background-color: white;
         height: 3.5rem;
+        // padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+          padding: 0.5rem;
+
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          &::placeholder {
+            color: lightgrey;
+          }
+        }
+        .send {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 1rem;
+          span {
+            cursor: pointer;
+            label{
+            cursor: pointer;
+            }
+          }
+        }
       }
     }
   }
