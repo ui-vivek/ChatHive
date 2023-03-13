@@ -35,6 +35,8 @@ export default function Register() {
               email:email,
               photoURL: downloadURL,
             });
+            await setDoc(doc(db, "users", res.user.uid), {});
+            
           });
         }
       );

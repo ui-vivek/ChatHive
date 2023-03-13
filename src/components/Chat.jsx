@@ -8,9 +8,9 @@ export default function Chat() {
       <div className="chatInfo">
         <span>Hola</span>
         <div className="chatIcon">
-          <span><i class='bx bxs-video bx-sm' style={{color:'#e1eedd'}}  ></i></span>
-          <span><i class='bx bxs-user-plus bx-sm' style={{color:'#e1eedd'}}  ></i></span>
-          <span><i class='bx bx-dots-horizontal-rounded bx-sm' style={{color:'#e1eedd'}}  ></i></span>
+          <span><i className='bx bxs-video bx-sm' style={{color:'#e1eedd'}}  ></i></span>
+          <span><i className='bx bxs-user-plus bx-sm' style={{color:'#e1eedd'}}  ></i></span>
+          <span><i className='bx bx-dots-horizontal-rounded bx-sm' style={{color:'#e1eedd'}}  ></i></span>
         </div>
       </div>
         <Messages/>
